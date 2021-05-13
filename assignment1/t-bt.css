@@ -1,0 +1,374 @@
+.header{
+    display: flex;
+    height:80px;
+    /* border-bottom:1px solid black; */
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px
+}
+.header-branch,
+.search-container,
+.navbar-container {
+    flex: 1 0 200px ;
+}
+.header-branch{
+    padding-left: 40px;
+    margin:auto;
+}
+.search-container{
+    margin:auto;
+}
+.search{
+    width: 300px;
+    height:50px;
+    border-radius:50px;
+    display: flex;
+    border:1px solid #dddddd;
+    margin:auto;
+    text-justify: auto;
+    
+}
+.search-body{
+    flex-grow: 8;
+    align-self: center;
+    padding-left:10px;
+}
+.search-icon{
+    flex-grow: 2;
+    align-self:flex-end;
+    text-align: center;
+    justify-content: center;
+    line-height: 45px;
+    height:100%;
+}
+.navbar-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar{
+    display:flex;
+    justify-content: flex-end;
+}
+.navbar-left{
+    display:flex;
+    
+}
+.navbar-left-link-border{
+    align-self: center;
+    text-align: center;
+    padding:10px;
+    background-color: #f7f7f7;
+    border-radius: 40px;
+}
+.navbar-left-link{
+    align-self: center;
+    
+}
+.navbar-icon-globe{
+    width:46px;
+    height:42px;
+    text-align: center;
+    display: flex;
+    background-color: #f7f7f7;
+    border-radius: 40px;
+}
+.icon-center{
+    display:inline-block;
+    line-height: 45px;
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    /* https://stackoverflow.com/questions/17642953/centering-fontawesome-icons-vertically-and-horizontally */
+}
+.navbar-right-border{
+    display:flex;
+    border-radius: 40px;
+    border:1px solid rgba(0, 0, 0, 0.08);
+    height: 42px;
+}
+.navbar-icon-align{
+    padding:10px;
+}
+.navbar-icon-user{
+    padding:10px;
+}
+.alink{
+    color:black;
+    text-decoration: underline;
+}
+
+.site-content{
+}
+.site-header{
+}
+.site-header-up{
+    padding-left: 40px;
+}
+.site-header-down-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding:0 40px
+}
+.site-header-link-layout{
+}
+.site-header-link{
+}
+.site-header-icon-layout{
+}
+
+/*  */
+.big-img-left{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.small-img{
+    width: 100%;
+    width:100%;
+    object-fit: cover;
+    padding-left: 5px;
+    padding-top:5px;
+}
+/*  */
+
+.grid-container{
+    display:grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ; 
+    /* grid-template-area:
+    'item1 item1 item2 item3'
+    'item1 item1 item4 item5'; */
+}
+.item1{
+    /* grid-area: item1; */
+    grid-column: 1/3;
+    grid-row: 1/3;
+    
+}
+.item2{
+    /* grid-area: item2; */
+}
+.item3{
+    /* grid-area: item3; */
+}
+.item4{
+    /* grid-area: item4; */
+}
+.item5{
+    /* grid-area: item5; */
+}
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+    height: 100%;
+}
+.image img{
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      height: 100%;
+}
+
+/* Lam hinh vuong tham khao http://jsfiddle.net/webtiki/p9L2q/
+https://stackoverflow.com/questions/23400232/force-bootstrap-responsive-image-to-be-square */
+
+.header-info{
+    padding:48px 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-info-head-wrap{}
+.header-info-head{
+    font-size: 22px;
+    line-height: 26px;
+}
+.branch-hotel{
+    
+}
+.branch-hotel-icon{
+    border-radius: 50px;
+}
+
+.content-detail-wrap{
+    padding:32px 0 32px 0;
+}
+.content-detail-row{
+    display: flex;
+    margin-bottom: 24px;
+}
+.content-detail-icon{
+
+}
+.content-detail-para{
+    margin-left:16px;
+}
+.content-detail-head{
+    font-weight: 600 ;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+.content-detail-body{
+    color: rgb(113, 113, 113) ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 20px ;
+}
+.content-description{
+    padding:32px 0 48px;
+}
+.content-amentities-header{
+    padding-bottom: 24px;
+}
+.content-amentities-body{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.amentities-row{
+    display: flex;
+    padding-bottom: 16px;
+}
+.amentities-row-icon{
+    margin-right:16px;
+}
+.notactive{
+    text-decoration: line-through;
+}
+.content-amentities-button{
+    margin-top:24px;
+}
+.amentities-button{
+    border-radius: 8px;
+}
+.inner-button{
+    padding:13px 23px;
+}
+
+
+.calender{
+
+}
+.calender-header{
+
+}
+.calender-header-title{
+
+}
+.calender-header-body{
+    padding-top:8px;
+}
+
+.card-check{
+    position: relative;
+    height: 100%;
+    margin-left:20%;
+    
+}
+.card-check-inner{
+    border: 1px solid rgb(221,221,221);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    border-radius: 12px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 130px;
+    padding:24px;
+    margin-top:50px;    
+    
+}
+.card-check-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 24px 0;
+}
+.card-check-head-left{
+    display: flex;
+}
+.card-check-head-right{
+    display: flex;
+}
+.card-check-body{
+    border:1px solid #b0b0b0;
+    border-radius: 8px;
+    width: 100%;
+}
+.card-check-body-wrap{
+    display: flex;
+    
+}
+.check-in{
+    width: 50%;
+    padding:10px 5px 15px 10px;
+    border-right: 1px solid #b0b0b0;
+}
+.check-out{
+    width: 50%;
+    padding:10px 5px 15px 10px;
+}
+.card-check-button{}
+.card-check-outer{}
+
+.guests{
+    padding-left: 10px;
+    border-top: 1px solid #b0b0b0;
+    display: flex;
+    justify-content: space-between;
+}
+.guests-wrap{}
+.guests-title{}
+.guests-detail{}
+.guests-arrow{
+    padding-right: 20px;
+    padding-top:13px;
+}
+
+.card-check-button{
+    color:white;
+    margin-top: 20px;
+    text-align: center;
+    height: 48px;
+    line-height: 44px;
+    vertical-align: middle;
+    border: 1px solid rgb(219,13,99);
+    border-radius:12px ;
+    background-color: rgb(219,13,99);
+    cursor: pointer;
+}
+
+
+/* ////// */
+
+.content-review{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.comment-item{
+    padding:0 8px;
+    margin-right:8.3%;
+    margin-bottom:80px;
+}
+.comment-head{}
+.comment-user-img{
+    border-radius: 50%;
+}
+.comment-user{
+    float: left;
+    padding-right: 10px;
+}
+.comment-head-name{}
+.comment-head-time{}
+
+.footer-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-list-item{
+    padding-bottom: 10px;
+}
+.footer-list-title{
+    padding:10px 0;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            background-image: url("images/bg-body.png");
+            background-repeat: no-repeat;
+            background-size:   100% 100%;
+            background-position:center;
+            
+            
+            
+        }
+        .wrapper{
+            width:43.75%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            
+        }
+        .header{
+            background-image: url("images/bg-header.jpg");
+            height:140px;
+        }
+        .nav{
+            background-image: url("images/bg-menu.png");
+            display: flex;
+            height: 35px;
+        }
+        .link{
+            text-align: center;
+            padding: 8px 15px;
+        }
+        .link>a{
+            color: white;
+        }
+        .img{
+            height:72px;
+            width: 480px;
+            z-index: 5;
+        }
+        .title>h2{
+            color: yellowgreen;
+            font-weight: 300;
+            padding: 20px 5px 0px 10px;
+        }
+        .title>p{
+            color:darkgray;
+            padding: 0 10px;
+        }
+        .para>p{
+            padding:10px 5px 10px 10px;
+            /* color:red; */
+            line-height: 1.2;
+        }
+        .icon{
+            vertical-align: top;
+        }
+        span{
+            color: deepskyblue;
+        }
+        .top{
+            background-image: url("images/bg-feed.gif");
+            height: 25px;
+            width: 152px;
+            text-align: center;
+        }
+        .top>img{
+            height: 25px;
+            width:100px;
+            object-fit: cover;
+            object-position: 0px 0px;
+            
+        }
+        .main{
+            height: 100%;
+            background-color: white;
+            float:left;
+        }
+        .content{
+            width: 70%;
+            float: left;
+            
+        }
+        .sidebar{
+            width:28.5%;
+            float:left;
+            background-color: #efefef;
+
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .livefeed{
+            border-bottom: 1px  solid #e5e5e5;
+            padding-left: 5px;
+        }
+        .livefeed>a{
+            color:black;
+        }
+        li:first-child{
+            padding-top: 10px;
+        }
+        .footer{
+            background-image: url(images/bg-footer.jpg);
+            width: 100%;
+            float: left;
+            height: 100px;
+        }
+        .footer>p{
+            color:white;
+            padding-top: 60px;
+            padding-left:10px;
+        }
+        .header>h1{
+            padding-top: 50px;
+            padding-left: 30px;
+            font-style: italic;
+            color:#afafb1;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Site Title</h1>
+        </header>
+        <nav class="nav">
+            <div class="link">
+                <a href="">Link One</a>
+            </div>
+            <div class="link">
+                <a href="">Link Two</a>
+            </div>
+            <div class="link">
+                <a href="">Link Three</a>
+            </div>
+            <div class="link">
+                <a href="">Link Four</a>
+            </div>
+            <div class="link">
+                <a href="">Link Five</a>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="content">
+                <div class="img">
+                    <img src="images/bg-ad-top.png" alt="not can" >
+                </div>
+                <div class="title">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Post on 30 november 2006</p>
+                </div>
+                <div class="para">
+                    <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio.</p>
+                    <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio.</p>
+
+                </div>
+                <div class="notice">
+                    <span style="padding-left: 10px;"><img class="icon" src="images/icon-comment.png" alt="icon-comment">  3 comments</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="top"> <img src="images/button-feed.png" alt="button-feed" ></div>
+                <ul>
+                    <li>
+                        <div class="livefeed"> <a href="">Link One</a></div>
+                    </li>
+                    <li>
+                        <div class="livefeed"> <a href="">Link Two</a></div>
+                    </li>
+                    <li>
+                        <div class="livefeed"> <a href="">Link Three</a></div>
+                    </li>
+                    <li>
+                        <div class="livefeed"> <a href="">Link Four</a></div>
+                    </li>
+                    <li>
+                        <div class="livefeed"> <a href="">Link Five</a></div>
+                    </li>
+                    <li style="background-color: white;">
+                        <div class="lastlivefeed"> <img style="width: 100%;" src="images/bg-sidebar-bottom.gif" alt="bg-sidebar-bottom" ></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer" >
+            <p> Footer</p>
+        </footer>
+    </div>
+</body>
+</html>

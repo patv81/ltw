@@ -1,0 +1,25 @@
+.title{
+    font-size: 22px;
+    line-height: 26px;
+}
+.title-small{
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 800;
+}
+.p-descript{
+    font-size: 14px;
+    color:#717171;
+}
+.p-para{
+    font-size: 16px;
+    color:#222;
+}
+.p-title{
+    font: size 16px;
+    font-weight: 600;
+    color: rgb(34,34,34);
+}
+.color-des{
+    color:rgb(113, 113, 113);
+}

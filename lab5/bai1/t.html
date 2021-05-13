@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Horizontal form with static control</h2>
+        <div class="input-group">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Intput 1 </span>
+                </div>
+                <input id="input1" type="number" class="form-control" placeholder="Input 1">
+            </div>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class=" input-group-text"> Operator </span>
+                </div>
+                <select class="form-control input-xs" id="op">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                    <option>^</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Intput 2 </span>
+                </div>
+                <input id="input2" type="number" class="form-control" placeholder="Input 2">
+            </div>
+            <div class="input-group mb-3">
+                <fieldset disabled class="input-group">
+                    <input id="result" type="text" class="form-control disabled" placeholder="">
+                </fieldset>
+            </div>
+
+            
+        </div>
+        <button type="submit" class="btn btn-default btn-primary" onclick="calculate()">submit</button>
+        <button class="btn btn-danger" type="reset">Reset</button>
+
+    </div>
+
+</body>
+
+</html>

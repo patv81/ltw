@@ -1,0 +1,17 @@
+có 3 cách nhúng css vào .
+inline css : nhungs trực tiếp vào thẻ ví dụ : <div style="color:red;"></div>
+internal css: nhúng vào file html  
+<head>
+	<style>
+	*{color:red;}
+	</style>
+</head>
+<body></body>
+external css: nhúng file vào 
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+</body>
+- Thứ tự ưu tiên : inline > internal  > external > default.
+Còn lại nêu trùng thì ưu tiên cái xuất hiện cuối.

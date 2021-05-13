@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+            
+        }
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: burlywood;
+            width: 750px;
+            overflow: hidden;
+        }
+        h1{
+            /* position: relative;
+            top:4px; */
+            
+            line-height: 50px;
+        }
+        .header {
+            height: 50px;
+            background-color: antiquewhite;
+            padding-left: 10px;
+        }
+        h2{
+            margin:10px 0 30px;
+        }
+        .whatisthis{
+            padding-bottom: 15px;
+            display:inline-block;
+        }
+        p{
+            line-height: 1.3;
+        }
+        .nav a {
+            padding: 5px 5px;
+        }
+        .nav{
+            line-height: 30px;
+            padding-left: 5px;
+        }
+        .content{
+            display: flex;
+        }
+        .col{
+            padding-left: 10px;
+        }
+        .col1 {
+            background-color: chocolate;
+            width: 520px;
+        }
+        .col2 {
+            background-color: cornflowerblue;
+            width: 230px;
+        }
+        .col3{
+            clear: both;
+        }
+        ul{
+            margin-left: 20px;
+        }
+        .footer{
+            background-color: cyan;
+            display: flex;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+        <nav class="nav">
+            <a href="">Option 1</a>
+            <a href="">Option 2</a>
+            <a href="">Option 3</a>
+            <a href="">Option 4</a>
+            <a href="">Option 5</a>
+        </nav>
+        <div class="content">
+            <div class=" col col1">
+                <h2>Column 1</h2>
+                <a href="" class="whatisthis ">456 Berea Street Home</a><br>
+                <a href="" class="whatisthis ">Simple 2 column CSS layout</a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at congue nisl. Proin sed enim ut
+                    felis rhoncus
+                    imperdiet sed eu ante. Vestibulum lectus ipsum, semper sed accumsan eget, tempor et felis.
+                    Suspendisse molestie diam sed
+                    tortor vehicula, quis posuere sapien porta. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per
+                    inceptos himenaeos. Phasellus hendrerit fermentum lectus, at euismod felis congue eget. Fusce
+                    eleifend lectus in quam
+                    feugiat congue. Praesent non tincidunt elit. Sed vestibulum sodales facilisis. In hac habitasse
+                    platea dictumst. Duis
+                    non felis vitae nunc varius pellentesque. Phasellus ex velit, tristique ac bibendum et, sollicitudin
+                    eget lorem. Aliquam
+                    condimentum vitae justo id tincidunt. Ut consequat eros massa, vel mattis arcu finibus at. Etiam
+                    bibendum porttitor orci
+                    at vehicula.
+                </p>
+                <br>
+                <p>
+                    Cras tortor turpis, maximus ac sagittis dignissim, placerat vitae elit. Praesent mattis, purus ac
+                    fringilla blandit,
+                    odio diam cursus nisi, eu porttitor nibh lacus nec justo.
+                </p>
+            </div>
+            <div class="col col2">
+                <h2>Column 2 </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at congue nisl. Proin sed enim ut
+                    felis rhoncus
+                    imperdiet sed eu ante. Vestibulum lectus ipsum, semper sed accumsan eget, tempor et felis.
+                    Suspendisse molestie diam sed
+                    tortor vehicula, quis posuere sapien porta.
+                </p>
+                <ul>
+                    <li> <a href=""> link 1</a></li>
+                    <li> <a href=""> link 2</a></li>
+                    <li> <a href=""> link 3</a></li>
+                    <li> <a href=""> link 4</a></li>
+                    <li> <a href=""> link 5</a></li>
+                    <li> <a href=""> link 6</a></li>
+                    <li> <a href=""> link 7</a></li>
+                    <li> <a href=""> link 8</a></li>
+                    <li> <a href=""> link 9</a></li>
+                </ul>
+            </div>
+            <div class="col3"></div>
+        </div>
+        <footer class="footer">
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
